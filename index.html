@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toolora - All Your Daily Tools in One Place</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3A86FF',
+                        accent: '#4CC9F0',
+                        text: '#333333',
+                        secondary: '#777777',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-text">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-bold text-primary">Toolora</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="font-medium hover:text-primary">Home</a>
+                <a href="#" class="font-medium hover:text-primary">Tools</a>
+                <a href="#" class="font-medium hover:text-primary">About</a>
+                <a href="#" class="font-medium hover:text-primary">Contact</a>
+            </div>
+            <button class="md:hidden text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-16 px-6 bg-gradient-to-r from-primary/5 to-accent/5">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">All Your Daily Tools in One Place</h1>
+            <p class="text-secondary text-lg mb-8">Fast. Free. Smart. Simplify tasks with Toolora.</p>
+            <div class="max-w-2xl mx-auto relative">
+                <input type="text" placeholder="Search for tools..." class="w-full py-4 px-6 rounded-full shadow-sm border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                <button class="absolute right-2 top-2 bg-primary text-white py-2 px-6 rounded-full hover:bg-primary/90 transition">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto py-12 px-6">
+        <!-- Essential Converters -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <span class="w-2 h-8 bg-primary mr-3 rounded-full"></span>
+                Essential Converters
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <!-- Tool Cards -->
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-primary/20">
+                    <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">Image to PDF</h3>
+                    <p class="text-secondary text-sm">Convert images to PDF documents</p>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-primary/20">
+                    <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">PDF to Word</h3>
+                    <p class="text-secondary text-sm">Convert PDFs to editable Word files</p>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-primary/20">
+                    <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">Text to PDF</h3>
+                    <p class="text-secondary text-sm">Create PDFs from plain text</p>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-primary/20">
+                    <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">Image to Text (OCR)</h3>
+                    <p class="text-secondary text-sm">Extract text from images</p>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-primary/20">
+                    <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">Text to Image</h3>
+                    <p class="text-secondary text-sm">Convert text to handwriting style images</p>
+                </div>
+            </div>
+            
+            <div class="mt-6 text-center">
+                <button class="text-primary font-medium hover:underline">View all 10 essential converters →</button>
+            </div>
+        </section>
+
+        <!-- Document & Productivity Tools -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <span class="w-2 h-8 bg-accent mr-3 rounded-full"></span>
+                Document & Productivity Tools
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Tool Cards -->
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-accent/20">
+                    <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">Document Merger/Splitter</h3>
+                    <p class="text-secondary text-sm">Combine or split PDFs and documents</p>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-accent/20">
+                    <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">Preeti to Unicode</h3>
+                    <p class="text-secondary text-sm">Convert Preeti font to Unicode</p>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-accent/20">
+                    <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">Nepali-English Translator</h3>
+                    <p class="text-secondary text-sm">Translate between Nepali and English</p>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-accent/20">
+                    <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.933 12.8a1 1 0 000-1.6L6.6 7.2A1 1 0 005 8v8a1 1 0 001.6.8l5.333-4zM19.933 12.8a1 1 0 000-1.6l-5.333-4A1 1 0 0013 8v8a1 1 0 001.6.8l5.333-4z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">Grammar Checker</h3>
+                    <p class="text-secondary text-sm">Check grammar in Nepali & English</p>
+                </div>
+            </div>
+            
+            <div class="mt-6 text-center">
+                <button class="text-accent font-medium hover:underline">View all 17 productivity tools →</button>
+            </div>
+        </section>
+
+        <!-- Image & Design Tools -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <span class="w-2 h-8 bg-primary mr-3 rounded-full"></span>
+                Image & Design Tools
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Tool Cards -->
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-primary/20">
+                    <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">Background Remover</h3>
+                    <p class="text-secondary text-sm">Remove backgrounds from images</p>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-primary/20">
+                    <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">Image Resizer</h3>
+                    <p class="text-secondary text-sm">Resize and compress images</p>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-primary/20">
+                    <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">Format Converter</h3>
+                    <p class="text-secondary text-sm">Convert between WebP/JPEG/PNG</p>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-primary/20">
+                    <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">Screenshot Annotator</h3>
+                    <p class="text-secondary text-sm">Add notes to screenshots</p>
+                </div>
+            </div>
+            
+            <div class="mt-6 text-center">
+                <button class="text-primary font-medium hover:underline">View all 5 image tools →</button>
+            </div>
+        </section>
+
+        <!-- Student Tools -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <span class="w-2 h-8 bg-accent mr-3 rounded-full"></span>
+                Student Tools
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Tool Cards -->
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-accent/20">
+                    <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">GPA Calculator</h3>
+                    <p class="text-secondary text-sm">Calculate GPA from SEE percentage</p>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-accent/20">
+                    <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">Notes Summarizer</h3>
+                    <p class="text-secondary text-sm">Summarize long notes automatically</p>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-accent/20">
+                    <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">MCQ Generator</h3>
+                    <p class="text-secondary text-sm">Create MCQs from your notes</p>
+                </div>
+                
+                 <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-accent/20">
+                    <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">Past Papers Finder</h3>
+                    <p class="text-secondary text-sm">Find past question papers</p>
+                </div>
+            </div>
+            
+            <div class="mt-6 text-center">
+                <button class="text-accent font-medium hover:underline">View all 6 student tools →</button>
+            </div>
+        </section>
+
+        <!-- AI Tools -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <span class="w-2 h-8 bg-primary mr-3 rounded-full"></span>
+                AI Tools
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Tool Cards -->
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-primary/20">
+                    <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">AI Chatbot (Nepali)</h3>
+                    <p class="text-secondary text-sm">Chat with AI in Nepali language</p>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-primary/20">
+                    <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">AI Email Writer</h3>
+                    <p class="text-secondary text-sm">Generate professional emails</p>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-primary/20">
+                    <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">AI Caption Generator</h3>
+                    <p class="text-secondary text-sm">Create social media captions</p>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition border border-gray-100 hover:border-primary/20">
+                    <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-medium mb-1">AI Study Planner</h3>
+                    <p class="text-secondary text-sm">Create personalized study plans</p>
+                </div>
+            </div>
+            
+            <div class="mt-6 text-center">
+                <button class="text-primary font-medium hover:underline">View all 5 AI tools →</button>
+            </div>
+        </section>
+    </main>
+  
+    <!-- Footer -->
+    <footer class="bg-gray-50 py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Toolora</h3>
+                    <p class="text-secondary">All your daily tools in one place. Fast, free and smart solutions for your everyday tasks.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-secondary hover:text-primary">Home</a></li>
+                        <li><a href="#" class="text-secondary hover:text-primary">All Tools</a></li>
+                        <li><a href="#" class="text-secondary hover:text-primary">About Us</a></li>
+                        <li><a href="#" class="text-secondary hover:text-primary">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Categories</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-secondary hover:text-primary">Essential Converters</a></li>
+                        <li><a href="#" class="text-secondary hover:text-primary">Productivity Tools</a></li>
+                        <li><a href="#" class="text-secondary hover:text-primary">Image Tools</a></li>
+                        <li><a href="#" class="text-secondary hover:text-primary">Student Tools</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="text-secondary">info@toolora.com</li>
+                        <li class="text-secondary">+977 9841XXXXXX</li>
+                        <li class="text-secondary">Kathmandu, Nepal</li>
+                        <li class="flex space-x-4 mt-4">
+                            <a href="#" class="text-primary hover:text-accent">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="text-primary hover:text-accent">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="text-primary hover:text-accent">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 mt-8 pt-8 text-center text-secondary">
+                <p>© 2023 Toolora. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
